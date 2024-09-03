@@ -1,0 +1,62 @@
+/* * {
+    background-color: aqua;
+} */
+
+/* 
+
+comment - the code is still there but the browser will not mind it 
+
+Ctrl + /
+
+*/
+
+body {
+    background-color: white;
+}
+
+h1 {
+    color: pink !important;
+    color: red;
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#my-id {
+    color: green;
+    font-size: 40px;
+}
+
+.my-class {
+    color: blue;
+    background-color: yellow;
+}
+
+h3 {
+    color: black;
+}
+
+span {
+    color: violet;
+    background-color: black;
+}
+
+#blue-color {
+    color: blue;
+}
+
+.brown-color {
+    color: brown !important;
+}
+
+#background-blue, h2, .background-blue {
+    background-color: blue;
+}
+
+#my-img {
+    width: 70%;
+    height: 70%;
+}
+
+.my-link {
+    text-align: center;
+}

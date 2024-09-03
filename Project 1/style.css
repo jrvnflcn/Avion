@@ -1,0 +1,159 @@
+/*css*/
+/*****background*****/
+body{
+    background-color:black;
+    background-image: url("resources/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+}
+/*****header*****/
+div.header{
+    background-color: black;
+    background-size:100%;
+    opacity:0.8;
+}
+span.header{
+    display: block;
+    text-align: center;
+}
+
+span#title{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:crimson;
+}
+
+span#subtext{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace
+    ;color: white;
+}
+
+/****1st Line*****/
+
+div#sjw1{
+    display: table;
+    margin: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+
+
+}
+div#image img{
+
+    float:left;
+    max-width: 250px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px 8px rgba(37, 12, 105, 0.7);
+    
+}
+
+div#img-caption{
+    margin: 250px 30px;
+    position:absolute;
+    text-decoration:none;
+    color:white;
+    background:rgba(14, 8, 32, 0.7);
+}
+div#text1{
+    
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    margin-top: 60px;
+    size: 20px;
+    color:white;
+    background:rgba(14, 8, 32, 0.7);
+    text-align: center;
+    box-shadow: 0px 0px 0px 8px rgba(37, 12, 105, 0.7);
+
+}
+
+
+/***Second Line***/
+div#sjw2{
+    margin: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+
+h2.header{
+    display: block;
+    text-align: center;
+    color: crimson;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+}
+div#image2 img{
+    position: inherit;
+    float:center;
+    max-width: 60%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px 8px rgba(37, 12, 105, 0.7);
+    
+}
+div#text2{
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    margin-top: 20px;
+    size: 20px;
+    color:white;
+    background:rgba(14, 8, 32, 0.7);
+    text-align: left;
+    text-indent: 5%;
+    box-shadow: 0px 0px 0px 8px rgba(37, 12, 105, 0.7);
+
+}
+
+/**3rd Line**/
+
+div#image3 img{
+    position: inherit;
+    float:right;
+    max-width: 300px;
+    height: auto;
+    margin-top: 50px;
+    margin-right: 20px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px 8px rgba(37, 12, 105, 0.7);
+    
+}
+div#text3{
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    
+    margin-right: 350px;
+    size: 20px;
+    color:white;
+    background:rgba(14, 8, 32, 0.7);
+    text-align: left;
+    text-indent: 5%;
+    box-shadow: 0px 0px 0px 8px rgba(37, 12, 105, 0.7);
+
+}
+
+/**Third-Line**/
+
+div#tribute-info{
+    overflow: hidden;
+    float:center;
+    size: 20px;
+    color:white;
+    background:rgba(14, 8, 32, 0.7);
+    text-align: center;
+    box-shadow: 0px 0px 0px 8px rgba(37, 12, 105, 0.7);
+
+}
+
+#tribute-link{
+    color:aqua;
+}
