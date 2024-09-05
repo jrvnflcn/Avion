@@ -17,49 +17,49 @@
     </script>
     <!--Navbar Ends Here-->
 
-    <div class="container-lg">
+    <div class="container-lg my-5">
         <div class="row justify-content-center">
-            <div class="col-md-5 text-center text-md-start">
+            <div class="col-md-5 text-center text-md-start shadow">
                 <h1 class="display-4" id="title">
                     Forms Project
                 </h1>
-                <p class="lead" id="description">It's just a sample. Created 04/09/2024.</p>
+                <p class="lead" id="description">It's just a survey with no point.<br><i>Created 04/09/2024.</i></p>
                 <form method="get">
                     <label for="name" class="text-muted mt-2" id="name-label">Full Name:</label>
                     <div class="row">
                         <div class="col">
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="fname" name="fname" required>
+                        <input type="text" class="form-control shadow-sm" placeholder="First name" aria-label="First name" id="fname" name="fname" required>
                         </div>
                         <div class="col">
-                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lname" name="lname" required>
+                        <input type="text" class="form-control shadow-sm" placeholder="Last name" aria-label="Last name" id="lname" name="lname" required>
                         </div>
                     </div>
                     <label for="email" class="text-muted mt-2" id="email-label">E-mail Address:</Address></label>
                     <div class="row">
                         <div class="col">
-                        <input type="email" class="form-control" placeholder="youremail@url.com" aria-label="E-Mail" id="email" name="email" required>
+                        <input type="email" class="form-control shadow-sm" placeholder="youremail@url.com" aria-label="E-Mail" id="email" name="email" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                         <label for="mobile" class="text-muted mt-1 fs-6" id="mnumber-label">Mobile:</label>
-                        <input type="tel" class="form-control" placeholder="+639XX-XXX-XXXX" maxlength="13" aria-label="Mobile Number" id="mobile" name="mnumber" required>
+                        <input type="tel" class="form-control shadow-sm" placeholder="+639XX-XXX-XXXX" maxlength="13" aria-label="Mobile Number" id="mobile" name="mnumber" required>
                         </div>
                         
                         <div class="col">
                         <label for="landline" class="text-muted mt-1 fs-6" id="lnumber-label">Landline:</label>
-                        <input type="tel" class="form-control" placeholder="+02XXXX-XXXX" aria-label="Landline Number" id="landline" name="lnumber">
+                        <input type="tel" class="form-control shadow-sm" placeholder="+02XXXX-XXXX" aria-label="Landline Number" id="landline" name="lnumber">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-8">
                         <label for="birthday" class="text-muted mt-1 fs-6">Birthday:</label>
-                        <input type="date" class="form-control"  aria-label="Birthday"   id="bday" max="2011-08-09" name="bday" required>
+                        <input type="date" class="form-control shadow-sm"  aria-label="Birthday"   id="bday" max="2011-08-09" name="bday" required>
                         </div>
                         
                         <div class="col-4">
                         <label for="age" class="text-muted mt-1 fs-6">Age:</label>
-                        <input type="number" class="form-control" aria-label="Age" min="13" id="age" name="age" required>
+                        <input type="number" class="form-control shadow-sm" aria-label="Age" min="13" id="age" name="age" required>
                         </div>
                     </div>
                     
@@ -67,7 +67,7 @@
                         <div class="col-8">
                         <label for="comment" class="text-muted mt-2" id="comment">Do you like this webpage?</Address></label></div>
                         <div class="col-4">
-                            <select class="form-select" aria-label="Do you like this webpage" id="comment" name="comment" required>
+                            <select class="form-select shadow-sm" aria-label="Do you like this webpage" id="comment" name="comment" required>
                                 <option selected disabled>Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No"disabled>No</option>
@@ -81,7 +81,7 @@
                         </div>
                         <div class="col-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radiomoney" id="radiomoney" value="Yes" required>
+                                <input class="form-check-input shadow-sm" type="radio" name="radiomoney" id="radiomoney" value="Yes" required>
                                 <label class="form-check-label" for="radiomoney">
                                 Yes
                                 </label>
@@ -89,7 +89,7 @@
                         </div>   
                         <div class="col-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radiomoney" id="radiomoney" disabled>
+                                <input class="form-check-input shadow-sm" type="radio" name="radiomoney" id="radiomoney" disabled>
                                 <label class="form-check-label" for="radiomoney">
                                 No
                                 </label>
@@ -103,7 +103,7 @@
                         </div>
                         <div class="col-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="checkmoney" id="checkmoney" value="Yes" required>
+                                <input class="form-check-input shadow-sm" type="checkbox" name="checkmoney" id="checkmoney" value="Yes" required>
                                 <label class="form-check-label" for="checkmoney">
                                 Yes
                                 </label>
@@ -111,7 +111,7 @@
                         </div>   
                         <div class="col-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="checkmoney" id="checkmoney" disabled>
+                                <input class="form-check-input shadow-sm" type="checkbox" name="checkmoney" id="checkmoney" disabled>
                                 <label class="form-check-label" for="checkmoney">
                                 No
                                 </label>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="row mt-1">
                         <div class="col-11">
-                        <textarea name="violent" id="violent" class="form-control mx-3"></textarea>
+                        <textarea name="violent" id="violent" class="form-control mx-3 shadow"></textarea>
                         </div>
                     </div>
                     
@@ -137,7 +137,8 @@
                 </form>
             </div>
             <div class="col-md-5 m-5 p-5 align-center text-center d-none d-md-block">
-                <h1 class="display-5 m-5 p-5">Put Image Here</h1>
+                <img src="1.jpg" alt="" class="img-fluid">
+               <!-- <h1 class="display-5 m-5 p-5">Put Image Here</h1>-->
             </div>
         </div>
     </div>
