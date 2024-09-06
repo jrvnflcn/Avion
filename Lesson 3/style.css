@@ -1,0 +1,38 @@
+.one{
+    background-color: red;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 20px 20px 20px;
+    border: 5px solid;
+    border-color: black;
+
+}
+.two{
+    background-color: blue
+}
+
+.one, .two{
+    display: inline-block;
+    font-size: 100px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: center;
+}
+
+.first{
+    background-color: yellow;
+    flex: 50% ;
+}
+
+.second{
+    background-color: green;
+    flex:25% ;
+}
+
+.third{
+    background-color: orange;
+    flex:25% ;
+}
