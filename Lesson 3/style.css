@@ -17,22 +17,152 @@
 
 .container{
     display: flex;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     flex-direction: row;
     text-align: center;
+    justify-content: space-between;
 }
 
 .first{
     background-color: yellow;
-    flex: 50% ;
+    /* flex: 50% ; */
 }
 
 .second{
     background-color: green;
-    flex:25% ;
+    /* flex:25% ; */
 }
 
 .third{
     background-color: orange;
-    flex:25% ;
+    /* flex:25% ; */
+}
+
+/**box-container**/
+
+.box-container{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.black-box{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+
+.purple-box{
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+}
+
+.brown-box{
+    background-color: brown;
+    width: 150px;
+    height: 150px;
+}
+
+/**order-container**/
+
+.order-container{
+    display: flex;
+    justify-content: start;
+}
+
+.apple{
+    background-color: crimson;
+    order: 4;
+}
+
+.banana{
+    background-color: yellow;
+    order: 1;
+}
+
+.mango{
+    background-color: green;
+    order: -1;
+}
+
+.watermelon{
+    background-color: red;
+    order: -5;
+}
+
+/**grow-container**/
+
+.grow-container{
+    display: flex;
+}
+
+.grow1, .grow2, .grow3{
+    background-color: red;
+    margin: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.grow1{
+    flex-grow: 1;
+}
+
+.grow2{
+    flex-grow: 2;
+
+}
+
+.grow3{
+    flex-grow: 3;
+}
+
+/**exercise**/
+
+.exercise-container{
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    background-color: green;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+
+.top{
+    align-items: start;
+    justify-content: space-between;
+    display: flex;
+}
+
+.box1{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+}
+
+.box2{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+}
+
+.bottom{
+    align-items: start;
+    justify-content: space-between;
+    display: flex;
+}
+
+.box3{
+    height: 20px;
+    width: 20px;
+    background-color: orange;
+}
+
+.box4{
+    height: 20px;
+    width: 20px;
+    background-color: pink;
 }
