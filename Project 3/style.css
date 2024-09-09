@@ -1,0 +1,65 @@
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 800px;
+    align-items: center;
+    background-color: green;
+    margin-top: 2%;
+
+}
+
+.chess-container{
+    
+    width: 480px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    Border: 1px solid black;
+    
+}
+
+.identifier{
+    
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100px;
+}
+
+
+.white, .black{
+    flex: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.black {
+    background-color: #4e7837;
+   
+}
+
+.fa-regular{
+    font-size: 25px;
+}
+
+.fa-solid{
+    font-size: 25px;
+}
