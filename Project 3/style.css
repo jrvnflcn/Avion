@@ -1,13 +1,17 @@
-
+body{
+    background-color: green !important;
+}
 
 .container{
     display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
     justify-content: center;
-    height: 600px;
-    width: 800px;
     align-items: center;
     background-color: green;
     margin-top: 2%;
+    
 
 }
 
@@ -62,4 +66,35 @@
 
 .fa-solid{
     font-size: 25px;
+}
+
+.label{
+    background-color: white;
+    padding: 0px 10px;
+    margin-top 20px;
+    margin-bottom: 5px;
+}
+
+
+/***Grid Layout CSS**/
+
+.chess-container-grid{
+    display: grid;
+    grid-template-columns: 50px 100px 100px 100px 100px;
+    background-color: white;
+    justify-items: start;
+    align-items: start;
+    padding: 15px;
+    border: solid 1px black;
+}
+
+.identifier-grid{
+    height: 50px;
+    width: 50px;
+}
+
+.columns-grid {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    width: 100px;
 }
