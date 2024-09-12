@@ -1,0 +1,29 @@
+/* @media all and (min-width: 320px) and (max-width: 780px){
+    body {
+        background-color: yellow !important; 
+    }
+} */
+
+/* @media only screen and (orientation: landscape) {
+    body{
+        background-color: red !important;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    body{
+        background-color: blue !important;
+    }
+} */
+
+/* @media all and (min-device-aspect-ratio: 16/9){
+    body {
+        background-color: red !important; 
+    }
+} */
+
+@media print {
+    body{
+        font-size: 100px !important;
+    }
+}
