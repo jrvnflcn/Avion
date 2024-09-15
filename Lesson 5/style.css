@@ -1,29 +1,38 @@
-/* @media all and (min-width: 320px) and (max-width: 780px){
+/* This will only be applied to screens/devices with width size in between 320px and 780px */
+/* @media all and (min-width: 320px) and (max-width: 780px) {
     body {
-        background-color: yellow !important; 
+        background-color: yellow;
     }
 } */
 
-/* @media only screen and (orientation: landscape) {
-    body{
-        background-color: red !important;
+/* This will be applied when landscape or portrait screen is detected */
+/* @media only screen and (orientation: landscape){
+    body {
+        background-color: red;
     }
 }
 
-@media only screen and (orientation: portrait) {
-    body{
-        background-color: blue !important;
+@media only screen and (orientation: portrait){
+    body {
+        background-color: blue;
     }
 } */
 
-/* @media all and (min-device-aspect-ratio: 16/9){
+/* This appears if the screen is at a 16/9 ratio */
+/* @media all and (min-device-aspect-ratio: 16/9) {
     body {
-        background-color: red !important; 
+        background-color: purple;
     }
 } */
 
 @media print {
-    body{
-        font-size: 100px !important;
+    body {
+        font-size: 100px;
+        background-color: yellow;
+        color: red;
+    }
+
+    h1 {
+        background-color: blue;
     }
 }
