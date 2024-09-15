@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    height: 50px;
+    background-color: #ee4d2d;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-inline: 30px;
+    /* padding-left and padding-right */
+}
+
+.shopee-header {
+    font-size: 30px;
+}
+
+.shopee-logo, .right {
+    display: none;
+}
+
+.products {
+    max-width: 80%;
+    display: grid;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+.item {
+    color: black;
+    padding: 1rem;
+    height: auto;
+    margin-top: 30px;
+    border: 1px solid gray;
+}
+
+.product-image {
+    width: 50%;
+    margin-inline: auto;
+    /* margin-left and margin-right */
+    display: block;
+}
+
+.description {
+    padding-left: 16px;
+}
+
+footer {
+    margin-top: 5%;
+    height: auto;
+    background-color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color: #ee4d2d;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .shopee-logo {
+        display: block;
+        max-width: 100px;
+    }
+
+    .right {
+        display: flex;
+        gap: 27px;
+    }
+
+    .shopee-header {
+        display: none;
+    }
+
+    p:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
