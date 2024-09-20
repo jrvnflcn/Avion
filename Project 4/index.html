@@ -144,54 +144,52 @@
         <!--Section 4-->
         <a class="anchor" id="contact" style="top: -12px;"></a>
         <div class="row mt-1 bg-white py-5 d-flex flex-column flex-md-row">         
-            
-            
-           
-
             <div class="col-md-6 text-center text-md-start">
                 
                     <span class="fw-light display-2 text-black text-wrap">Contact Us</span>
                     <div><span class="fw-light fs-3 fst-italic align-center text-black text-wrap">Help us connect to you!</span></div>
                 
-                <div class="ms-3 d-flex flex-column text-start text-md-start">
-                    <label for="name" class="text-muted mt-2" id="name-label">Full Name:</label>
-                    <div class="row">
-                        <div class="col-6">
-                        <input type="text" class="form-control shadow-sm" placeholder="First name" aria-label="First name" id="fname" name="fname" required>
+                <div class="ms-md-3 col-12 d-flex flex-column text-start text-md-start">
+                    <form method="get">
+                        <label for="name" class="text-muted mt-2" id="name-label">Full Name:</label>
+                        <div class="row">
+                            <div class="col-6">
+                            <input type="text" class="form-control shadow-sm" placeholder="First name" aria-label="First name" id="fname" name="fname" required>
+                            </div>
+                            <div class="col-6">
+                            <input type="text" class="form-control shadow-sm" placeholder="Last name" aria-label="Last name" id="lname" name="lname" required>
+                            </div>
                         </div>
-                        <div class="col-6">
-                        <input type="text" class="form-control shadow-sm" placeholder="Last name" aria-label="Last name" id="lname" name="lname" required>
+                        <label for="email" class="text-muted mt-2" id="email-label">E-mail Address:</Address></label>
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="email" class="form-control shadow-sm" placeholder="youremail@url.com" aria-label="E-Mail" id="email" name="email" required>
+                            </div>
                         </div>
-                    </div>
-                    <label for="email" class="text-muted mt-2" id="email-label">E-mail Address:</Address></label>
-                    <div class="row">
-                        <div class="col-12">
-                            <input type="email" class="form-control shadow-sm" placeholder="youremail@url.com" aria-label="E-Mail" id="email" name="email" required>
-                        </div>
-                    </div>
 
-                    <div class="row mt-1">
-                        <label for="violent" class="form-label text-muted mt-2">Leave us a message!</label>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                        <textarea name="violent" id="violent" class="form-control shadow-sm" rows="5"></textarea>
+                        <div class="row mt-1">
+                            <label for="message" class="form-label text-muted mt-2">Leave us a message!</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                            <textarea name="message" id="message" class="form-control shadow-sm" rows="5"></textarea>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-6 d-none justify-content-center d-md-inline my-4 my-md-5">
-                <img src="assets/contact.png" alt="" class="img-fluid">
-            <!-- <h1 class="display-5 m-5 p-5">Put Image Here</h1>-->
-            </div>
-
-            <div class="col-md-6 row justify-content-end mt-2 mt-md-0">
-                <div class="col-2">
-                <button type="submit" class="btn btn-primary">
-                Woof!   </button>
+                <div class="col-md-6 d-none justify-content-center d-md-inline my-4 my-md-5">
+                    <img src="assets/contact.png" alt="" class="img-fluid">
+                <!-- <h1 class="display-5 m-5 p-5">Put Image Here</h1>-->
                 </div>
-            </div>
+
+                <div class="col-md-6 row justify-content-end mt-2 mt-md-0">
+                    <div class="col-2">
+                    <button type="submit" class="btn btn-primary">
+                    Woof!   </button>
+                    </div>
+                </div>
+            </form>
 
         </div><!--RowDivClosing-->
 
