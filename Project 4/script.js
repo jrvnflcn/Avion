@@ -1,35 +1,24 @@
-function paletteBlack(){
-    let palette = document.getElementById("black");
-    palette.classList.remove("bg-primary");
-    palette.classList.remove("bg-danger");
-    palette.classList.add("bg-black");  
-    
-    let palette2 = document.getElementById("black2");
-    palette2.classList.remove("bg-primary");
-    palette2.classList.remove("bg-danger");
-    palette2.classList.add("bg-black"); 
+function updatePalette(colorClass) {
+    const palettes = ["black", "black2"];
+    const colors = ["bg-primary", "bg-danger", "bg-black"];
+
+    palettes.forEach(paletteId => {
+        let palette = document.getElementById(paletteId);
+        colors.forEach(color => {
+            palette.classList.remove(color);
+        });
+        palette.classList.add(colorClass);
+    });
 }
 
-function paletteRed(){
-    let palette = document.getElementById("black");
-    palette.classList.remove("bg-black");
-    palette.classList.remove("bg-primary");
-    palette.classList.add("bg-danger");  
-
-    let palette2 = document.getElementById("black2");
-    palette2.classList.remove("bg-primary");
-    palette2.classList.remove("bg-black");
-    palette2.classList.add("bg-danger"); 
+function paletteBlack() {
+    updatePalette("bg-black");
 }
 
-function paletteBlue(){
-    let palette = document.getElementById("black");
-    palette.classList.remove("bg-danger");
-    palette.classList.remove("bg-black");
-    palette.classList.add("bg-primary");  
+function paletteRed() {
+    updatePalette("bg-danger");
+}
 
-    let palette2 = document.getElementById("black2");
-    palette2.classList.remove("bg-black");
-    palette2.classList.remove("bg-danger");
-    palette2.classList.add("bg-primary"); 
+function paletteBlue() {
+    updatePalette("bg-primary");
 }
