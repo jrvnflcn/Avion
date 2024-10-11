@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const input = document.getElementById("nameInput");
-    input.addEventListener("keypress", (e) => {
+    input.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
             showGreeting(); 
             document.getElementById('player').play(); 
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const goalInput = document.getElementById("goalInput");
-    goalInput.addEventListener("keypress", handleGoalSubmission);
+    goalInput.addEventListener("keydown", handleGoalSubmission);
 
     const quotesElement = document.getElementById("quotes");
     quotesElement.addEventListener("click", randomizeQuote);
