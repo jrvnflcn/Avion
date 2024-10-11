@@ -299,9 +299,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     window.onload = function() {
       setRandomBackground();
-      document.getElementById('player').play().catch(error => {
-        console.log('Autoplay prevented:', error);
-      });
     };
 
     updateTime();
