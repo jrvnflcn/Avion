@@ -111,13 +111,13 @@ function showGreeting() {
         const inputPage = document.getElementById("inputPage");
         const greetingPage = document.getElementById("greetingPage");
         const wholeBody = document.querySelector("body");
-        wholeBody.classList.remove('overflow-hidden')
+        inputPage.classList.add('fade-out')
         inputPage.classList.add('d-none');
         greetingPage.classList.remove('hidden');
         greetingPage.classList.add('visible');
         setTimeout(() => {
             inputPage.style.display = 'none';
-        }, 800);          
+        }, 1000);          
 
         if (currentHour < 12) {
                 greetingSpan.textContent = `Good Morning, ${nickname}`;

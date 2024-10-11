@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Color Transition</title>
+    <style>
+        /* Animation to transition from grayscale to color from left to right */
+        @keyframes colorTransition {
+            0% {
+                filter: grayscale(100%); /* Start in black-and-white */
+                mask-image: linear-gradient(to right, black 0%, white 100%); /* Full mask */
+            }
+            100% {
+                filter: grayscale(0%); /* End in full color */
+                mask-image: linear-gradient(to right, black 100%, white 0%); /* No mask */
+            }
+        }
+
+        /* Animation to fade out */
+        @keyframes fadeOut {
+            0% {
+                opacity: 1; /* Fully visible */
+            }
+            100% {
+                opacity: 0; /* Fully transparent */
+            }
+        }
+
+        /* Style for each image */
+        .ldio-x2uulkbinbj div {
+            width: 100px; /* Image width */
+            height: 100px; /* Image height */
+            background-size: cover; /* Cover entire div */
+            display: inline-block;
+            margin-right: 15px; /* Space between images */
+            filter: grayscale(100%); /* Start all in black-and-white */
+            animation: colorTransition 2s forwards; /* Start the animation on load */
+        }
+
+        /* Assign background images in the desired order */
+        .ldio-x2uulkbinbj div:nth-child(1) {
+            background-image: url('assets/elements/pyro500px.png');
+            animation-delay: 0s; /* First image starts immediately */
+        }
+        .ldio-x2uulkbinbj div:nth-child(2) {
+            background-image: url('assets/elements/hydro500px.png');
+            animation-delay: 1s; /* Second image starts after 1 second */
+        }
+        .ldio-x2uulkbinbj div:nth-child(3) {
+            background-image: url('assets/elements/anemo500px.png');
+            animation-delay: 2s;
+        }
+        .ldio-x2uulkbinbj div:nth-child(4) {
+            background-image: url('assets/elements/electro500px.png');
+            animation-delay: 3s;
+        }
+        .ldio-x2uulkbinbj div:nth-child(5) {
+            background-image: url('assets/elements/dendro500px.png');
+            animation-delay: 4s;
+        }
+        .ldio-x2uulkbinbj div:nth-child(6) {
+            background-image: url('assets/elements/cryo500px.png');
+            animation-delay: 5s;
+        }
+        .ldio-x2uulkbinbj div:nth-child(7) {
+            background-image: url('assets/elements/geo500px.png');
+            animation-delay: 6s;
+        }
+
+        /* Center the images horizontally and vertically */
+        .loadingio-spinner-ellipsis-nq4q5u6dq7r {
+            display: flex; /* Flexbox layout */
+            justify-content: center; /* Horizontally center images */
+            align-items: center; /* Vertically center images */
+            height: 100vh; /* Full viewport height */
+            background-color: #ffffff; /* Background color of the container */
+        }
+
+        /* Center the images in a row */
+        .ldio-x2uulkbinbj {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Remove the margin-right from the last image */
+        .ldio-x2uulkbinbj div:last-child {
+            margin-right: 0;
+        }
+
+        /* Fade-out class to apply the animation */
+        .fade-out {
+            animation: fadeOut 1s forwards; /* Fade out over 1 second */
+        }
+    </style>
+</head>
+<body>
+    <div class="loadingio-spinner-ellipsis-nq4q5u6dq7r">
+        <div class="ldio-x2uulkbinbj">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <script>
+        // Function to fade out the container
+        function fadeOutContainer() {
+            const container = document.querySelector('.loadingio-spinner-ellipsis-nq4q5u6dq7r');
+            container.classList.add('fade-out'); // Add fade-out class
+        }
+
+        // Wait until the last image's animation is complete
+        const lastAnimationDelay = 6; // Delay of the last image
+        setTimeout(fadeOutContainer, (lastAnimationDelay + 1) * 1000); // Add 1 second buffer
+    </script>
+</body>
+</html>

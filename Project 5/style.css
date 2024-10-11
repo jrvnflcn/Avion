@@ -2,8 +2,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; 
-    margin: 0; 
+    height: 100vh;
+    margin: 0;
 }
 
 .full-height {
@@ -38,7 +38,6 @@ body {
     z-index: 1020;
 }
 
-
 .btn-custom {
     text-align: start !important;
     width: 150px;
@@ -63,7 +62,7 @@ body {
 
 #inputPage,
 #greetingPage {
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition: opacity 2s ease, transform 2s ease;
 }
 
 .strikethrough {
@@ -112,16 +111,14 @@ body {
     overflow-y: auto !important;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
+.scrollOverflow::-webkit-scrollbar {
     display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .example {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+}
+
+.scrollOverflow {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
 #goalListContainer.visible {
     opacity: 1;
@@ -186,10 +183,11 @@ li:hover .close-btn {
 
 #audioControls {
     position: fixed;
-    top: 10px; 
-    right: 10px;     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    z-index: 999; 
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
     background-color: rgb(255, 255, 255, 0.8);
     border-radius: 20px;
     padding: 0px !important;
@@ -203,42 +201,147 @@ li:hover .close-btn {
 }
 
 .iconquests {
-    display: inline-block; 
-    width: 40px; 
-    height: 40px; 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
     margin-left: 5px;
-    background-image: url('assets/icons/Icon_Quests.webp'); 
-    background-size: contain; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-image: url('assets/icons/Icon_Quests.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .iconevents {
-    display: flex; 
-    position:relative;
-    width: 25px; 
-    height: 25px; 
+    display: flex;
+    position: relative;
+    width: 25px;
+    height: 25px;
     align-items: center;
     margin-left: 5px;
     margin-top: 7px;
     margin-right: 5px;
-    background-image: url('assets/icons/Icon_Event_Quest.webp'); 
-    background-size: contain; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-image: url('assets/icons/Icon_Event_Quest.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .iconstory {
-    display: flex; 
-    position:relative;
-    width: 25px; 
-    height: 25px; 
+    display: flex;
+    position: relative;
+    width: 25px;
+    height: 25px;
     align-items: center;
     margin-left: 5px;
     margin-top: 7px;
     margin-right: 5px;
-    background-image: url('assets/icons/Icon_Story_Quest.webp'); 
-    background-size: contain; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-image: url('assets/icons/Icon_Story_Quest.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*loadingpage*/
+@keyframes colorTransition {
+    0% {
+        filter: grayscale(100%);
+        mask-image: linear-gradient(to right, black 0%, white 100%);
+    }
+
+    100% {
+        filter: grayscale(0%);
+        mask-image: linear-gradient(to right, black 100%, white 0%);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ldio-x2uulkbinbj div {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 15px;
+    filter: grayscale(100%);
+    animation: colorTransition 2s forwards;
+}
+
+.ldio-x2uulkbinbj div:nth-child(1) {
+    background-image: url('assets/elements/pyro500px.png');
+    animation-delay: 1s;
+}
+
+.ldio-x2uulkbinbj div:nth-child(2) {
+    background-image: url('assets/elements/hydro500px.png');
+    animation-delay: 1.5s;
+}
+
+.ldio-x2uulkbinbj div:nth-child(3) {
+    background-image: url('assets/elements/anemo500px.png');
+    animation-delay: 2s;
+}
+
+.ldio-x2uulkbinbj div:nth-child(4) {
+    background-image: url('assets/elements/electro500px.png');
+    animation-delay: 3s;
+}
+
+.ldio-x2uulkbinbj div:nth-child(5) {
+    background-image: url('assets/elements/dendro500px.png');
+    animation-delay: 3.5s;
+}
+
+.ldio-x2uulkbinbj div:nth-child(6) {
+    background-image: url('assets/elements/cryo500px.png');
+    animation-delay: 4s;
+}
+
+.ldio-x2uulkbinbj div:nth-child(7) {
+    background-image: url('assets/elements/geo500px.png');
+    animation-delay: 4.5s;
+}
+
+.loadingio-spinner-ellipsis-nq4q5u6dq7r {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.ldio-x2uulkbinbj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ldio-x2uulkbinbj div:last-child {
+    margin-right: 0;
+}
+
+.fade-out {
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s forwards;
 }

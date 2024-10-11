@@ -12,10 +12,22 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="loading.js"></script>
 </head>
 
 <body class="overflow-hidden container-fluid">
-    <div id="inputPage" class="container-fluid d-flex full-height justify-content-center align-items-center visible">
+    <div class="loadingio-spinner-ellipsis-nq4q5u6dq7r z-1">
+        <div class="ldio-x2uulkbinbj">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div id="inputPage" class="d-none container-fluid d-flex full-height justify-content-center align-items-center visible">
         <div class="text-center">
             <label for="nameInput" class="form-label display-4 text-nowrap">What is your nickname?</label>
             <input type="text" id="nameInput" class="form-control-underline col-8 pt-3" placeholder="Enter your nickname..." autocomplete="off">
@@ -62,7 +74,7 @@
     </div>
 
 
-    <div id="goalListContainer" class="hidden shadow-lg rounded overflow-hidden pe-2 example">
+    <div id="goalListContainer" class="hidden shadow-lg rounded overflow-hidden pe-2 scrollOverflow">
         <div class="testingOverflow">
             <div id="mainGoals" class="d-block pt-3">
                 <h4 class="text-primary display-5 fs-2 d-flex"><i class="iconevents"></i>Main Goals</h4>
