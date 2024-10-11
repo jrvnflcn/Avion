@@ -1,0 +1,244 @@
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    margin: 0; 
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.form-control-underline {
+    border: none;
+    border-bottom: 2px solid #000;
+    border-radius: 0;
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: none;
+    text-align: center;
+
+}
+
+.form-control-underline:focus {
+    box-shadow: none;
+    outline: none;
+    border-bottom-color: #007bff;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 20px;
+}
+
+.sticky-top {
+    background-color: white;
+    z-index: 1020;
+}
+
+
+.btn-custom {
+    text-align: start !important;
+    width: 150px;
+}
+
+.colon {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 1;
+    display: flex;
+    transform: translateY(0);
+}
+
+#inputPage,
+#greetingPage {
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.goal-list {
+    list-style: none;
+    padding: 0;
+}
+
+.goal-list li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+.goal-list li span {
+    white-space: normal;
+    word-wrap: break-word;
+
+}
+
+.goal-list input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#goalListContainer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 95%;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: inset;
+    overflow-y: auto !important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+#goalListContainer.visible {
+    opacity: 1;
+    display: block;
+    transform: translateX(0);
+    pointer-events: auto;
+
+}
+
+.close-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: red !important;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 10px;
+
+}
+
+li:hover .close-btn {
+    display: inline;
+
+}
+
+#editQuoteBtn {
+    display: none
+}
+
+#quotesContainer:hover #editQuoteBtn {
+    display: inline-block;
+    max-height: 20px;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    display: flex;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in;
+}
+
+#quotes {
+    max-width: 600px;
+}
+
+#hideGoalListBtn {
+    position: absolute;
+    top: 2px;
+    left: 250px;
+}
+
+#audioControls {
+    position: fixed;
+    top: 10px; 
+    right: 10px;     padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 999; 
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 0px !important;
+}
+
+@media (max-width: 950px) {
+    #goalListContainer {
+        display: none;
+
+    }
+}
+
+.iconquests {
+    display: inline-block; 
+    width: 40px; 
+    height: 40px; 
+    margin-left: 5px;
+    background-image: url('assets/icons/Icon_Quests.webp'); 
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.iconevents {
+    display: flex; 
+    position:relative;
+    width: 25px; 
+    height: 25px; 
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 7px;
+    margin-right: 5px;
+    background-image: url('assets/icons/Icon_Event_Quest.webp'); 
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.iconstory {
+    display: flex; 
+    position:relative;
+    width: 25px; 
+    height: 25px; 
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 7px;
+    margin-right: 5px;
+    background-image: url('assets/icons/Icon_Story_Quest.webp'); 
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
