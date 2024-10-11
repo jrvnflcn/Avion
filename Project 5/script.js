@@ -236,7 +236,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const input = document.getElementById("nameInput");
     input.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
-            showGreeting(); 
+            showGreeting();
+            document.getElementById('player2').play(); 
             document.getElementById('player').play(); 
         }
     });
