@@ -293,6 +293,11 @@ document.addEventListener("DOMContentLoaded", () => {
         attributeFilter: ['class']
     });
     
+    const audio = document.getElementById('soundClick');
+    document.addEventListener('click', function() {
+        audio.currentTime = 0;
+        audio.play();
+    });
 
     quotesElement.textContent = getRandomQuote();
 

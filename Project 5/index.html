@@ -12,6 +12,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <audio src="assets/Click.mp3.wav" id="soundClick"></audio>
     <script src="loading.js"></script>
 </head>
 
@@ -46,7 +47,7 @@
         <button id="toggleGoalListBtn" class="btn fs-5 text-black text-center"
             style="position: absolute; top: 20px; left: 20px;">
             <i class="iconquests d-block"></i>
-            <span class="d-block display-5 fs-5">Goals</span>
+            <span class="d-block display-5 fs-5">Quests</span>
         </button>
         <div class="d-block">
             <div class="d-block justify-content-center text-center" id="">
@@ -66,7 +67,7 @@
                         <input type="text" id="goalInput" class="form-control-underline ms-5 pt-3"
                             style="width: 400px;"" autocomplete="off" placeholder=" Seize the day..">
                         <label class="ps-2">
-                            <input type="checkbox" id="mainGoalCheckbox"> Main Goal
+                            <input type="checkbox" id="mainGoalCheckbox"> Main Quest
                         </label>
                     </div>
                 </div>
@@ -78,19 +79,17 @@
     <div id="goalListContainer" class="hidden shadow-lg rounded overflow-hidden pe-2 scrollOverflow">
         <div class="testingOverflow">
             <div id="mainGoals" class="d-block pt-3">
-                <h4 class="text-primary display-5 fs-2 d-flex"><i class="iconevents"></i>Main Goals</h4>
+                <h4 class="text-primary display-5 fs-2 d-flex"><i class="iconevents"></i>Main Quests</h4>
                 <ul class="goal-list mt-3 ps-4 d-block" id="mainGoalList"></ul>
 
             </div>
             <div id="toDoList" class="d-block ps-2">
-                <h4 class="text-secondary display-5 fs-3 d-flex"><i class="iconstory"></i>Things to Do</h4>
+                <h4 class="text-secondary display-5 fs-3 d-flex"><i class="iconstory"></i>Side Quests</h4>
                 <ul class="goal-list mt-3 ps-5 d-block" id="goalList"></ul>
             </div>
             <button id="hideGoalListBtn" class="btn pt-3">✖</button>
         </div>
     </div>
-
-
 </body>
 <script src="script.js"></script>
 
