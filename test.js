@@ -1,23 +1,25 @@
-function sendText() {
+function findUserData() {
+    return new Promise((resolve, reject) => {
+        const userData = {
+            firstName: 'John',
+            age: 30,
+            email: 'john.doe@example.com'
+        };
 
-    const students = [
-        ['Jose', 'Rizal'],
-        ['Manny', 'Pacquiao'],
-        ['Robert', 'Rodriguez'],
-        ['Elon', 'Musk'],
-        ['Mark', 'Zuckerberg']
-    ];
+        const userFound = true;
 
-    for (let i = 0; i < students.length; i++) {
-        const firstName = students[i][0];
-        const lastName = students[i][1];
-        const message = `Greetings ${firstName} ${lastName}! School is canceled for the day! Please check your e-mail for your asynchronized homework!`;
-        
-        console.log(message);
-        console.log(`*********`);
-    }
+        if (userFound) {
+            resolve(userData);
+        } else {
+            reject('User data not found.');
+        }
+    });
 }
-    
 
-sendText();
-
+findUserData()
+    .then((data) => {
+        console.log('User Data:', data);
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
